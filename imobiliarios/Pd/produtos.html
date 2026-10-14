@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="produto.css" />
+  </head>
+  <body>
+    <section class="imob-colecao" id="produtos">
+      <div class="imob-container">
+        <div class="imob-cabecalho">
+          <span class="imob-etiqueta">A NOSSA COLEÇÃO</span>
+          <h2>Encontre o móvel ideal</h2>
+          <p>
+            Explore os nossos móveis e encontre a solução perfeita para a sua
+            casa.
+          </p>
+        </div>
+
+        <div class="imob-pesquisa">
+          <span class="imob-icone-pesquisa">&#9906;</span>
+          <input
+            type="search"
+            id="pesquisaProdutos"
+            placeholder="Pesquisar sofá, mesa, cadeira..."
+            aria-label="Pesquisar produtos"
+          />
+          <button type="button" id="limparPesquisa">Limpar</button>
+        </div>
+
+        <div class="imob-categorias">
+          <button class="imob-filtro ativo" data-categoria="todos">
+            Todos
+          </button>
+          <button class="imob-filtro" data-categoria="sala">Sala</button>
+          <button class="imob-filtro" data-categoria="quarto">Quarto</button>
+          <button class="imob-filtro" data-categoria="cozinha">Cozinha</button>
+          <button class="imob-filtro" data-categoria="escritorio">
+            Escritório
+          </button>
+        </div>
+
+        <div class="imob-resultados">
+          <p id="contadorProdutos">8 produtos encontrados</p>
+        </div>
+
+        <div class="imob-lista-produtos" id="listaProdutos">
+          <article class="imob-produto" data-categoria="sala">
+            <div class="imob-imagem">
+              <img
+                src="img/Caderao moderno.jpeg"
+                alt="Sofá moderno para sala"
+                loading="lazy"
+              />
+              <span class="imob-tag">Destaque</span>
+            </div>
+            <div class="imob-info">
+              <span class="imob-tipo">SALA</span>
+              <h3>Sofá Moderno</h3>
+              <p>Sofá confortável com design elegante para a sua sala.</p>
+              <div class="imob-preco">Sob consulta</div>
+              <a
+                class="imob-contactar"
+                href="https://wa.me/244923000000?text=Olá!%20Tenho%20interesse%20no%20Sofá%20Moderno."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Consultar produto</a
+              >
+            </div>
+          </article>
+
+          <article class="imob-produto" data-categoria="sala">
+            <div class="imob-imagem">
+              <img
+                src="img/Mesa central.jpeg"
+                alt="Mesa de centro para sala"
+                loading="lazy"
+              />
+            </div>
+            <div class="imob-info">
+              <span class="imob-tipo">SALA</span>
+              <h3>Mesa de Centro</h3>
+              <p>Uma peça funcional que complementa a decoração da sua sala.</p>
+              <div class="imob-preco">Sob consulta</div>
+              <a
+                class="imob-contactar"
+                href="https://wa.me/244923000000?text=Olá!%20Tenho%20interesse%20na%20Mesa%20de%20Centro."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Consultar produto</a
+              >
+            </div>
+          </article>
+
+          <article class="imob-produto" data-categoria="quarto">
+            <div class="imob-imagem">
+              <img
+                src="img/Cama moderna.jpeg"
+                alt="Cama moderna para quarto"
+                loading="lazy"
+              />
+            </div>
+            <div class="imob-info">
+              <span class="imob-tipo">QUARTO</span>
+              <h3>Cama Moderna</h3>
+              <p>Design contemporâneo para criar um quarto acolhedor.</p>
+              <div class="imob-preco">Sob consulta</div>
+              <a
+                class="imob-contactar"
+                href="https://wa.me/244923000000?text=Olá!%20Tenho%20interesse%20na%20Cama%20Moderna."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Consultar produto</a
+              >
+            </div>
+          </article>
+
+          <article class="imob-produto" data-categoria="quarto">
+            <div class="imob-imagem">
+              <img
+                src="img/Mesa de cabeceira.jpeg"
+                alt="Mesa de cabeceira"
+                loading="lazy"
+              />
+            </div>
+            <div class="imob-info">
+              <span class="imob-tipo">QUARTO</span>
+              <h3>Mesa de Cabeceira</h3>
+              <p>
+                Praticidade e estilo para manter os seus objetos organizados.
+              </p>
+              <div class="imob-preco">Sob consulta</div>
+              <a
+                class="imob-contactar"
+                href="https://wa.me/244923000000?text=Olá!%20Tenho%20interesse%20na%20Mesa%20de%20Cabeceira."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Consultar produto</a
+              >
+            </div>
+          </article>
+
+          <article class="imob-produto" data-categoria="cozinha">
+            <div class="imob-imagem">
+              <img
+                src="img/Moves de cuzhnha.jpeg"
+                alt="Mobiliário de cozinha"
+                loading="lazy"
+              />
+            </div>
+            <div class="imob-info">
+              <span class="imob-tipo">COZINHA</span>
+              <h3>Móveis de Cozinha</h3>
+              <p>Soluções para aproveitar melhor o espaço da sua cozinha.</p>
+              <div class="imob-preco">Sob consulta</div>
+              <a
+                class="imob-contactar"
+                href="https://wa.me/244923000000?text=Olá!%20Tenho%20interesse%20nos%20Móveis%20de%20Cozinha."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Consultar produto</a
+              >
+            </div>
+          </article>
+
+          <article class="imob-produto" data-categoria="cozinha">
+            <div class="imob-imagem">
+              <img
+                src="img/A sala de jantar é o cômodo mais interativo da….jpeg"
+                alt="Mesa de jantar com cadeiras"
+                loading="lazy"
+              />
+            </div>
+            <div class="imob-info">
+              <span class="imob-tipo">COZINHA</span>
+              <h3>Mesa de Jantar</h3>
+              <p>Um espaço confortável para partilhar refeições em família.</p>
+              <div class="imob-preco">Sob consulta</div>
+              <a
+                class="imob-contactar"
+                href="https://wa.me/244923000000?text=Olá!%20Tenho%20interesse%20na%20Mesa%20de%20Jantar."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Consultar produto</a
+              >
+            </div>
+          </article>
+
+          <article class="imob-produto" data-categoria="escritorio">
+            <div class="imob-imagem">
+              <img
+                src="img/Mesa de secretari.jpeg"
+                alt="Secretária de escritório"
+                loading="lazy"
+              />
+            </div>
+            <div class="imob-info">
+              <span class="imob-tipo">ESCRITÓRIO</span>
+              <h3>Secretária de Trabalho</h3>
+              <p>
+                Uma superfície prática para estudar ou trabalhar com conforto.
+              </p>
+              <div class="imob-preco">Sob consulta</div>
+              <a
+                class="imob-contactar"
+                href="https://wa.me/244923000000?text=Olá!%20Tenho%20interesse%20na%20Secretária%20de%20Trabalho."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Consultar produto</a
+              >
+            </div>
+          </article>
+
+          <article class="imob-produto" data-categoria="escritorio">
+            <div class="imob-imagem">
+              <img
+                src="img/cadeira presidente.jpeg"
+                alt="Cadeira para escritório"
+                loading="lazy"
+              />
+            </div>
+            <div class="imob-info">
+              <span class="imob-tipo">ESCRITÓRIO</span>
+              <h3>Cadeira de Escritório</h3>
+              <p>
+                Uma cadeira funcional para completar o seu espaço de trabalho.
+              </p>
+              <div class="imob-preco">Sob consulta</div>
+              <a
+                class="imob-contactar"
+                href="https://wa.me/244923000000?text=Olá!%20Tenho%20interesse%20na%20Cadeira%20de%20Escritório."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Consultar produto</a
+              >
+            </div>
+          </article>
+
+          <div class="imob-sem-resultados" id="semResultados" hidden>
+            <h3>Nenhum produto encontrado</h3>
+            <p>Tente pesquisar com outro nome ou escolher outra categoria.</p>
+            <button type="button" id="verTodos">Ver todos os produtos</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="imob-footer">
+      <h3>ImobCasa<span>.</span></h3>
+
+      <p>
+        Mobiliário pensado para transformar a sua casa num espaço confortável e
+        elegante.
+      </p>
+
+      <p class="imob-footer-aviso">
+        Projecto fictício desenvolvido para apresentar habilidades de
+        programação Web Front-End.
+      </p>
+
+      <div class="imob-footer-bottom">
+        © 2026 ImobCasa. Todos os direitos reservados.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

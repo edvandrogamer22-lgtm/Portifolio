@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="br-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imob</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#Inicio" class="logo"
+          >Mob
+          <span
+            >House
+            <span style="color: white">|Design <span>Moderno</span></span></span
+          ></a
+        >
+
+        <ul class="link">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#servico">Serviços</a></li>
+          <li><a href="#contacto">contacto</a></li>
+
+          <li>
+            <a href="#solicitar" class="nav-button">Solicitar Orçamento</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-s" id="inicio">
+      <div class="hero">
+        <h1>Transformamos espaços em lugares extraordinários.</h1>
+        <p>
+          Descubra móveis que combinam conforto, elegância e funcionalidade.
+          Criamos ambientes que refletem o seu estilo e tornam cada espaço
+          especial
+        </p>
+        <li>Qualidade • <span>Conforto</span> • Design</li>
+
+        <button
+          class="explo-btn"
+          onclick="
+            document
+              .getElementById('produtos')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          Explorar Coleção
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="sobre" id="sobre">
+        <h1>Sobre a MobHouse</h1>
+        <h3>Criamos ambientes que inspiram</h3>
+        <p>
+          A MobHouse é uma empresa dedicada ao mobiliário e à valorização dos
+          espaços. Selecionamos soluções que unem estética, conforto e
+          funcionalidade, ajudando os nossos clientes a criar ambientes únicos.
+        </p>
+        <p>
+          A nossa missão é oferecer soluções de mobiliário que correspondam às
+          necessidades de cada cliente, com atenção aos detalhes e compromisso
+          com a qualidade.
+        </p>
+        <button
+          onclick="
+            document
+              .getElementById('solicitar')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+          class="sobre-btn"
+        >
+          Conheça a nossa Empresa
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="Produtos" id="produtos">
+        <h1>Nossos Produtos</h1>
+        <p>
+          Os Melhores Produtos Para o Seu
+          <i> Escritorio, Quarto, Sala ou ainda a sua Cozinha.</i>
+        </p>
+        <p>
+          A personalização do seu gosto a nossa esquipa ira realizar e
+          satisfazer os nossos clientes
+        </p>
+        <div class="card">
+          <div class="card-p">
+            <img src="img/01.jpeg" alt="" />
+            <p>°Sofa de espera</p>
+            <p>
+              Melhor para o seu Escritorio ou para a sua sala de espera na sua
+              peqeuna empresa.
+            </p>
+          </div>
+          <div class="card-p">
+            <img src="img/02.jpeg" alt="" />
+            <p>°Cozinha soluções</p>
+            <p>Uma solução para a sua cozinha apos o seu grande casameneto.</p>
+          </div>
+          <div class="card-p">
+            <img src="img/03.jpeg" alt="" />
+            <p>°Escritorio basico</p>
+            <p>Um pequno setup para o seu Escritorio casual ou empresa.</p>
+          </div>
+        </div>
+        <button class="btn-col">
+          <a href="Pd/produtos.html"> Ver produtos </a>
+        </button>
+      </div>
+    </section>
+
+    <section id="servico">
+      <div class="Serviços">
+        <h1>Serviços fornecidos</h1>
+        <h3>Soluções Pensadas para si</h3>
+        <p>
+          <span>Mobiliário por Encomenda</span> Soluções personalizadas de
+          acordo com as medidas e necessidades do seu espaço.
+        </p>
+        <p>
+          <span>Consultoria de Interiores</span> Ajudamos a escolher móveis que
+          combinam com o seu ambiente e estilo.
+        </p>
+        <p>
+          <span>Entrega e Montagem</span>Facilitamos a instalação dos seus
+          móveis para uma experiência mais prática
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="diferencias">
+        <h1>Porquê Escolher a MobiCasa?</h1>
+        <p>
+          <span>Design Atual</span> Móveis com estilos que valorizam os seus
+          espaços.
+          <span>Atenção ao Cliente</span>
+          Acompanhamento personalizado durante o processo de escolha.
+          <span>Soluções Personalizadas</span> Opções adaptadas às
+          características de cada ambiente.
+          <span>Compromisso com a Qualidade</span> Atenção aos materiais,
+          acabamentos e detalhes.
+        </p>
+      </div>
+      <div class="chamada-acao">
+        <h1>O Seu Espaço Merece Algo Especial.</h1>
+        <p>
+          Está a pensar renovar a sua casa ou escritório? Encontre o mobiliário
+          ideal para transformar as suas ideias em realidade. Fale connosco e
+          solicite uma proposta adaptada às suas necessidades.
+        </p>
+        <button
+          onclick="
+            document
+              .getElementById('contacto')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+          class="btn-CTA"
+        >
+          Entrar em contacto Agora
+        </button>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="contacto">
+        <h1>Vamos Falar Sobre o Seu Projeto?</h1>
+        <p>
+          Estamos disponíveis para ajudar a encontrar as melhores soluções de
+          mobiliário para o seu espaço.
+        </p>
+        <ul>
+          Telefone: +244 900 000 000
+        </ul>
+        <ul>
+          E-mail: contacto@mobhouse.example
+        </ul>
+        <ul>
+          Localização: Luanda, Angola
+        </ul>
+        <ul>
+          Horário: Segunda a sexta-feira, das 08h00 às 17h00.
+        </ul>
+      </div>
+    </section>
+    <section class="secao-localizacao" id="solicitar">
+      <div class="localizacao-texto">
+        <span class="subtitulo-localizacao">ONDE ESTAMOS</span>
+
+        <h1>Visite a MobHouse</h1>
+
+        <p>
+          Estamos prontos para ajudar a transformar o seu espaço. Consulte a
+          nossa localização no mapa e venha conhecer as nossas soluções de
+          mobiliário.
+        </p>
+
+        <div class="localizacao-info">
+          <div class="info-item">
+            <h3>Morada</h3>
+            <p>Rua fictícia, Talatona, Luanda, Angola</p>
+          </div>
+
+          <div class="info-item">
+            <h3>Horário de atendimento</h3>
+            <p>Segunda a sexta-feira, das 08h00 às 17h00</p>
+          </div>
+
+          <div class="info-item">
+            <h3>Contacto</h3>
+            <p>+244 900 000 000</p>
+          </div>
+        </div>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Talatona%2C+Luanda%2C+Angola"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-mapa"
+        >
+          Ver no Google Maps
+        </a>
+      </div>
+
+      <div class="mapa-container">
+        <iframe
+          src="https://maps.google.com/maps?q=Talatona%2C%20Luanda%2C%20Angola&output=embed"
+          title="Mapa de localização fictícia da MobiCasa em Talatona, Luanda"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-marca">
+          <h2>MobHouse</h2>
+          <p>
+            Mobiliário que transforma espaços em ambientes elegantes,
+            confortáveis e funcionais.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Navegação</h3>
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="footer-contactos">
+          <h3>Contactos</h3>
+          <p>Telefone: +244 900 000 000</p>
+          <p>E-mail: contacto@mobhouse.example</p>
+          <p>Luanda, Angola</p>
+        </div>
+
+        <div class="footer-horario">
+          <h3>Horário</h3>
+          <p>Segunda a sexta-feira</p>
+          <p>08h00 às 17h00</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 MobHouse. Todos os direitos reservados.</p>
+
+        <a href="#inicio" class="voltar-topo"> Voltar ao topo ↑ </a>
+      </div>
+    </footer>
+  </body>
+</html>
