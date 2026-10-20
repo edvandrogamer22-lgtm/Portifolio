@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history of legends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div>History of Legends</div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#legends">Legends</a></li>
+                    <li><a href="history/stories.html">Stories</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section" id="home">
+
+        <video class="hero-video video-pc" autoplay muted loop playsinline aria-hidden="true">
+            <source src="mp4/fundo.mp4" type="video/mp4">
+        </video>
+
+        <video class="hero-video video-mobile" autoplay muted loop playsinline aria-hidden="true">
+            <source src="mp4/fundo01.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero">
+            <div>AN ARCHIVE OF LEGENDS</div>
+
+            <h1>SOME LEGENDS NEVER FADE.</h1>
+
+            <p>
+                Discover the stories, mysteries and legacies of the
+                legends that shaped the world of Minecraft and Free Fire.
+            </p>
+
+            <div class="btn-hero">
+
+                <!-- Primeiro botão: mantém o CSS antigo -->
+                <button onclick="document.getElementById('legends').scrollIntoView({behavior: 'smooth'})">
+                    EXPLORE THE LEGENDS
+                </button>
+
+                <!-- Segundo botão: link para outra página -->
+                <a href="history/Stories.html" class="stories-btn">
+                    DISCOVER THEIR STORIES
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="legends" id="legends">
+            <h1>LEGENDS ARCHIVE</h1>
+            <h3>Stories That Never Fade</h3>
+            <p>Discover the stories, mysteries, and legacies of the legends who shaped the worlds of Minecraft and Free
+                Fire.</p>
+            <h3>LEGENDS</h3>
+            <div>
+                <div class="card-l">
+                    <img src="img/T2.jpg" alt="technobled">
+                    <p>TechNobled</p>
+                    <a href="history/Stories.html" class="history-btn">Ver History</a>
+                </div>
+                <div class="card-l">
+                    <img src="img/Coelhao.jpg" alt="BlackN444">
+                    <p>BlackN444</p>
+                    <a href="history/Stories.html" class="history-btn">Ver History</a>
+                </div>
+                <div class="card-l">
+                    <img src="img/The Legend of Herobrine _ Minecraft Dark Fantasy Aesthetic.jfif" alt="herobrine">
+                    <p>Herobrine</p>
+                    <a href="history/Stories.html" class="history-btn">Ver History</a>
+                </div>
+            </div>
+
+            <div class="desc-l">
+                <p>Every legend has a story that shaped the world of Minecraft and gaming.
+
+                    Discover the achievements, mysteries, and memories of unforgettable legends.
+
+                    Explore Technoblade, Herobrine, and BlackN444 — legends who never fade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="media-section" id="media">
+        <div class="media-container">
+
+            <div class="media-header">
+                <span class="media-tag">The Legends Community</span>
+
+                <h2>
+                    SHARE YOUR <span>STORY.</span>
+                </h2>
+
+                <p>
+                    Every legend leaves a mark. Share your thoughts,
+                    memories and feedback about the legends who shaped
+                    the world of gaming.
+                </p>
+            </div>
+
+            <div class="media-layout">
+
+                <!-- Formulário de feedback -->
+                <div class="media-panel">
+                    <div class="media-panel-header">
+                        <div>
+                            <h3>Write Your Feedback</h3>
+                            <p>Your voice is part of the legacy.</p>
+                        </div>
+                    </div>
+
+                    <form class="media-form" id="media-form">
+                        <div class="media-field">
+                            <label for="feed-name">Your name</label>
+                            <input type="text" id="feed-name" placeholder="Enter your name" maxlength="40" required>
+                        </div>
+
+                        <div class="media-field">
+                            <label for="feed-legend">Choose a legend</label>
+
+                            <select id="feed-legend" required>
+                                <option value="">Select a legend</option>
+                                <option value="Technoblade">Technoblade</option>
+                                <option value="BlackN444">BlackN444</option>
+                                <option value="Herobrine">Herobrine</option>
+                                <option value="General Feedback">General feedback</option>
+                            </select>
+                        </div>
+
+                        <div class="media-field">
+                            <label for="feed-message">Your message</label>
+
+                            <textarea id="feed-message" placeholder="Share your memories, opinions or feedback..."
+                                maxlength="1000" required></textarea>
+
+                            <p class="media-hint">
+                                Share your thoughts respectfully. Maximum 1000 characters.
+                            </p>
+                        </div>
+
+                        <button class="media-submit" type="submit">
+                            SEND FEEDBACK <span>→</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Comunidade -->
+                <aside class="media-community">
+                    <div class="media-community-intro">
+                        <h3>One Community. Many Legends.</h3>
+
+                        <p>
+                            From unforgettable Minecraft adventures
+                            to legendary Free Fire moments, every
+                            memory deserves to be shared.
+                        </p>
+                    </div>
+
+                    <h3 class="media-community-label">
+                        Community Feedback
+                    </h3>
+
+                    <div class="media-feedback" id="feed-list">
+                        <div class="media-empty">
+                            <h4>The story starts with you.</h4>
+                            <p>
+                                Be the first to share your thoughts
+                                about your favourite legends.
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+
+            <div class="about-header">
+                <h2>ABOUT <span>OUR PROJECT</span></h2>
+                <p>
+                    Discover the purpose behind History of Legends
+                    and our mission to preserve gaming history.
+                </p>
+            </div>
+
+            <div class="about-cards">
+
+                <div class="about-card">
+                    <h3>About the Site</h3>
+                    <p>
+                        History of Legends is a digital archive
+                        dedicated to legendary characters and
+                        creators from Minecraft and Free Fire.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To preserve legendary stories, memorable
+                        achievements and important moments
+                        in gaming history.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Our Objectives</h3>
+                    <p>
+                        To share stories, explore mysteries and
+                        help visitors discover the impact of
+                        gaming legends.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Our Community</h3>
+                    <p>
+                        To create a space where fans can share
+                        feedback, memories and appreciation
+                        for their favourite legends.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+
+            <div class="contact-header">
+                <h2>CONTACT <span>THE CREATORS</span></h2>
+                <p>
+                    Connect with the creators and explore the gaming
+                    communities behind our favourite legends.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+                    <h3>Creator Contacts</h3>
+                    <p>Get in touch with the creators of History of Legends.</p>
+
+                    <div class="contact-item">
+                        <span>Username</span>
+                        <strong>edvandrogamer22</strong>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>Phone Contact 1</span>
+                        <a href="tel:93125451">931254513</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>Phone Contact 2</span>
+                        <a href="tel:943579735">943579735</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Minecraft Community</h3>
+                    <p>
+                        Discover discussions, builds, legendary players
+                        and stories from Minecraft fans.
+                    </p>
+
+                    <a class="forum-link" href="https://www.minecraftforum.net/" target="_blank"
+                        rel="noopener noreferrer">
+                        VISIT MINECRAFT FORUM <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Free Fire Community</h3>
+                    <p>
+                        Explore discussions, strategies, updates and
+                        experiences from the Free Fire community.
+                    </p>
+
+                    <a class="forum-link" href="https://www.reddit.com/r/freefire/" target="_blank"
+                        rel="noopener noreferrer">
+                        VISIT FREE FIRE COMMUNITY <span>↗</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>HISTORY <span>OF LEGENDS</span></h2>
+                <p>
+                    Preserving the stories, players and moments that
+                    made gaming legendary.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>QUICK LINKS</h3>
+                <a href="#home">Home</a>
+                <a href="#legends">Legends</a>
+                <a href="#stories">Stories</a>
+                <a href="#media">Media</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-community">
+                <h3>COMMUNITIES</h3>
+                <a href="https://www.minecraftforum.net/" target="_blank" rel="noopener noreferrer">
+                    Minecraft Forum ↗
+                </a>
+
+                <a href="https://www.reddit.com/r/freefire/" target="_blank" rel="noopener noreferrer">
+                    Free Fire Community ↗
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="footer-year">2026</span> History of Legends.
+                All rights reserved.
+            </p>
+            <p>Created by <span>edvandrogamer22</span></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
