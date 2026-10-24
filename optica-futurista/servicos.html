@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conhece os serviços da NØVA ÓTICA e agenda o teu atendimento.">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="css/servicos.css">
+    <script src="js/servicos.js" defer></script>
+</head>
+<body>
+
+ <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <img src="img/logo.jfif" alt="Nova Otica">
+                <span>Nova <strong>Otica</strong></span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <a href="index.html">Início</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="servicos.html" class="active">Serviços</a>
+                <a href="servicos.html#agendamento">Agendamentos</a>
+                <a href="historico.html">Histórico</a>
+                <a href="historico.html#contactos">Contactos</a>
+                <a href="servicos.html#agendamento" class="nav-cta">Marcar consulta</a>
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="eyebrow">NØVA ÓTICA / SERVIÇOS</span>
+            <h1>Visão clara.<br><span>O teu estilo.</span></h1>
+            <p>
+                Soluções para o teu conforto visual, com atendimento
+                simples e orientação para escolheres os teus óculos.
+            </p>
+            <a href="#agendamento" class="primary-button">Agendar atendimento ↓</a>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">NØVA</div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">O QUE OFERECEMOS</span>
+                    <h2>Os nossos serviços.</h2>
+                </div>
+                <p>Conhece as opções disponíveis na NØVA ÓTICA.</p>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <span class="service-number">Consultas</span>
+                    <h3>Consultas de optometria</h3>
+                    <p>Avaliação da visão e orientação sobre cuidados visuais.</p>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-number">Graduaçães</span>
+                    <h3>Óculos graduados</h3>
+                    <p>Modelos para diferentes necessidades visuais e estilos.</p>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-number">Fotograi</span>
+                    <h3>Óculos de sol</h3>
+                    <p>Modelos que combinam estilo e protecção solar.</p>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-number">Oculos para crianças</span>
+                    <h3>Óculos infantis</h3>
+                    <p>Opções para crianças, com atenção ao conforto.</p>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-number">Serviços tecnicos</span>
+                    <h3>Ajustes e manutenção</h3>
+                    <p>Orientação sobre os cuidados e ajustes dos teus óculos.</p>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-number">Design</span>
+                    <h3>Orientação personalizada</h3>
+                    <p>Ajuda para escolher modelos conforme as tuas preferências.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="appointment-section" id="agendamento">
+        <div class="container appointment-content">
+            <div class="appointment-intro">
+                <span class="eyebrow">MARCA O TEU ATENDIMENTO</span>
+                <h2>Vamos começar com uma mensagem.</h2>
+                <p>
+                    Preenche os teus dados. O WhatsApp abrirá com uma
+                    mensagem pronta para enviares à nossa equipa.
+                </p>
+            </div>
+
+            <form id="appointment-form" class="appointment-form">
+                <label for="name">Nome completo</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="O teu nome"
+                    maxlength="80"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="service">Serviço pretendido</label>
+                <select id="service" name="service" required>
+                    <option value="">Selecciona um serviço</option>
+                    <option>Consulta de optometria</option>
+                    <option>Óculos graduados</option>
+                    <option>Óculos de sol</option>
+                    <option>Óculos infantis</option>
+                    <option>Ajustes e manutenção</option>
+                    <option>Orientação personalizada</option>
+                </select>
+
+                <label for="date">Data preferida</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="message">Mensagem adicional (opcional)</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    maxlength="500"
+                    placeholder="Indica o horário preferido ou outra informação."
+                ></textarea>
+
+                <button type="submit" class="primary-button submit-button">
+                    Continuar pelo WhatsApp ↗
+                </button>
+
+                <p class="form-note">
+                    A marcação será confirmada pela equipa através do WhatsApp.
+                </p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <img src="img/logo.jfif" alt="NØVA ÓTICA">
+            <p>Vê além do habitual.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="contactos.html">Contactos</a>
+        </div>
+
+        <p class="copyright">© 2026 NØVA ÓTICA. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>

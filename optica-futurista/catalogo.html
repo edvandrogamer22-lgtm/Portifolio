@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descobre os modelos da NØVA ÓTICA.">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="css/catalogo.css">
+    <script src="js/catalogo.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <img src="img/logo.jfif" alt="Nova Otica">
+                <span>Nova <strong>Otica</strong></span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <a href="index.html">Início</a>
+                <a href="catalogo.html" class="active">Catálogo</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="servicos.html#agendamento">Agendamentos</a>
+                <a href="historico.html">Histórico</a>
+                <a href="historico.html#contactos">Contactos</a>
+                <a href="servicos.html#agendamento" class="nav-cta">Marcar consulta</a>
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="eyebrow">NØVA ÓTICA / CATÁLOGO</span>
+            <h1>A tua visão.<br><span>O teu estilo.</span></h1>
+            <p>Descobre modelos que combinam design, conforto e personalidade.</p>
+            <a href="#produtos" class="primary-button">Explorar coleção ↓</a>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">NØVA</div>
+    </section>
+
+    <section class="catalog-section" id="produtos">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">A NOSSA COLEÇÃO</span>
+                    <h2>Escolhe o teu modelo.</h2>
+                </div>
+                <p>Modelos para diferentes estilos e necessidades.</p>
+            </div>
+
+            <div class="catalog-toolbar">
+                <div class="filters" aria-label="Filtrar produtos">
+                    <button class="filter-button active" data-filter="todos" aria-pressed="true">Todos</button>
+                    <button class="filter-button" data-filter="grau" aria-pressed="false">Óculos de grau</button>
+                    <button class="filter-button" data-filter="sol" aria-pressed="false">Óculos de sol</button>
+                    <button class="filter-button" data-filter="infantil" aria-pressed="false">Infantis</button>
+                </div>
+
+                <label class="search-box">
+                    <span aria-hidden="true">⌕</span>
+                    <input type="search" id="product-search"
+                        placeholder="Pesquisar..." aria-label="Pesquisar modelos">
+                </label>
+            </div>
+
+            <div class="results-info">
+                <p id="results-count" aria-live="polite">A carregar produtos...</p>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                <p class="loading-message">A preparar a coleção...</p>
+            </div>
+
+            <div class="empty-state" id="empty-state" hidden>
+                <h3>Nenhum modelo encontrado</h3>
+                <p>Experimenta outra pesquisa ou categoria.</p>
+                <button class="reset-button" id="reset-filters">Ver produtos</button>
+            </div>
+
+            <p class="catalog-note">
+                Confirma a disponibilidade dos modelos directamente com a ótica.
+            </p>
+        </div>
+    </section>
+
+    <section class="catalog-cta">
+        <div class="container cta-content">
+            <div>
+                <span class="eyebrow">PRECISAS DE ORIENTAÇÃO?</span>
+                <h2>Encontra os óculos certos para ti.</h2>
+                <p>Marca um atendimento para receber orientação sobre as tuas necessidades visuais.</p>
+            </div>
+            <a href="servicos.html#agendamento" class="primary-button">Marcar consulta ↗</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <img src="img/logo.jfif" alt="NØVA ÓTICA">
+            <p>Vê além do habitual.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contactos.html">Contactos</a>
+        </div>
+
+        <p class="copyright">© 2026 NØVA ÓTICA. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>

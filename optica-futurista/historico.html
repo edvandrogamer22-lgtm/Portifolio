@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0d0c">
+    <title>Histórico e Contactos</title>
+
+    <link rel="stylesheet" href="css/historico.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <img src="img/logo.jfif" alt="Nova Otica">
+                <span>Nova <strong>Otica</strong></span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <a href="index.html">Início</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="servicos.html#agendamento">Agendamentos</a>
+                <a href="historico.html" class="active">Histórico</a>
+                <a href="historico.html#contactos">Contactos</a>
+                <a href="servicos.html#agendamento" class="nav-cta">Marcar consulta</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container hero-layout">
+                <div>
+                    <span class="eyebrow">NOVA OTICA · A TUA VISÃO</span>
+                    <h1>O teu histórico e os nossos <span>contactos.</span></h1>
+                    <p>Consulta os teus agendamentos anteriores, vê a localização ilustrativa e encontra os nossos contactos.</p>
+
+                    <div class="hero-actions">
+                        <a href="#historico" class="btn btn-primary">Ver histórico <span>↓</span></a>
+                        <a href="#contactos" class="btn btn-secondary">Contactar <span>↗</span></a>
+                    </div>
+                </div>
+
+                <div class="hero-logo-box">
+                    <img src="img/logo.jfif" alt="Logótipo Nova Otica" class="hero-logo">
+                    <span>NOVA OTICA</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="historico">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">OS TEUS REGISTOS</span>
+                    <h2>Histórico de <span>agendamentos.</span></h2>
+                    <p>Os agendamentos guardados neste navegador aparecem aqui.</p>
+                </div>
+
+                <a href="servicos.html#agendamento" class="btn btn-primary">Novo agendamento <span>↗</span></a>
+            </div>
+
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <div class="stat-icon">▤</div>
+                    <div>
+                        <strong id="total-agendamentos">0</strong>
+                        <p>Total de registos</p>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon">◷</div>
+                    <div>
+                        <strong id="proximos-agendamentos">0</strong>
+                        <p>Consultas futuras</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="history-list" id="history-list">
+                <div class="empty-history">
+                    <div class="empty-icon">▤</div>
+                    <h3>Ainda não existem agendamentos</h3>
+                    <p>Quando os registos forem guardados, poderás consultá-los nesta área.</p>
+                    <a href="servicos.html#agendamento" class="btn btn-primary">Marcar consulta</a>
+                </div>
+            </div>
+
+            <p class="privacy-note">Os registos locais não constituem uma confirmação oficial de consulta.</p>
+        </section>
+
+        <section class="location-section" id="localizacao">
+            <div class="container section location-layout">
+                <div class="location-content">
+                    <span class="eyebrow">ONDE ESTAMOS</span>
+                    <h2>Encontra a <span>Nova Otica.</span></h2>
+                    <p>O mapa apresenta uma área de referência em Luanda para demonstração. A localização da ótica é fictícia.</p>
+
+                    <div class="location-card">
+                        <div class="info-icon">⌖</div>
+                        <div>
+                            <span class="info-label">LOCALIZAÇÃO ILUSTRATIVA</span>
+                            <h3>Nova Otica</h3>
+                            <p>Luanda, Angola</p>
+                        </div>
+                    </div>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Luanda%2C%20Angola"
+                       target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        Abrir no Google Maps <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="map-frame">
+                    <iframe
+                        title="Mapa de referência de Luanda"
+                        src="https://maps.google.com/maps?q=Luanda%2C%20Angola&t=&z=12&ie=UTF8&iwloc=&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+                    <div class="map-label">
+                        <div class="info-icon">⌖</div>
+                        <div>
+                            <strong>Nova Otica</strong>
+                            <p>Localização fictícia · Luanda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="contactos">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">FALA CONNOSCO</span>
+                    <h2>Os nossos <span>contactos.</span></h2>
+                    <p>Estamos disponíveis através dos contactos indicados abaixo.</p>
+                </div>
+            </div>
+
+            <div class="contact-grid">
+                <article class="contact-card">
+                    <div class="contact-card-top">
+                        <span class="contact-icon">Linha de Atendimento</span>
+                        <span class="contact-arrow">↗</span>
+                    </div>
+                    <span class="info-label">WHATSAPP / TELEFONE</span>
+                    <h3>931 254 513</h3>
+                    <p>Contacta-nos para esclarecer dúvidas e tratar do teu agendamento.</p>
+                    <a href="https://wa.me/244931254513" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        Enviar mensagem <span>→</span>
+                    </a>
+                </article>
+
+                <article class="contact-card">
+                    <div class="contact-card-top">
+                        <span class="contact-icon">Correio de email</span>
+                        <span class="contact-arrow">↗</span>
+                    </div>
+                    <span class="info-label">EMAIL / IDENTIFICAÇÃO</span>
+                    <h3>edvandrofilipe</h3>
+                    <p>Contacto fornecido. Para receber mensagens por email, falta confirmar o endereço completo.</p>
+                    <button type="button" class="contact-link" id="copy-email">
+                        Copiar contacto <span>→</span>
+                    </button>
+                </article>
+
+                <article class="contact-card">
+                    <div class="contact-card-top">
+                        <span class="contact-icon">Nova Otica</span>
+                        <span class="contact-arrow">↗</span>
+                    </div>
+                    <span class="info-label">A NOSSA MARCA</span>
+                    <h3>Nova Otica</h3>
+                    <p>O teu espaço de referência para óculos, serviços e cuidados visuais.</p>
+                    <a href="catalogo.html" class="contact-link">
+                        Ver catálogo <span>→</span>
+                    </a>
+                </article>
+            </div>
+
+            <div class="contact-banner">
+                <div>
+                    <span class="eyebrow">MARCA A TUA CONSULTA</span>
+                    <h3>A tua visão merece atenção.</h3>
+                    <p>Consulta os nossos serviços e solicita um agendamento.</p>
+                </div>
+                <a href="servicos.html#agendamento" class="btn btn-primary">Marcar consulta <span>↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <img src="img/logo.jfif" alt="Nova Otica">
+                        <span>Nova <strong>Otica</strong></span>
+                    </a>
+                    <p>Nova Otica — visão, conforto e estilo. Descobre os nossos produtos e consulta os serviços disponíveis.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Navegação</h3>
+                    <a href="index.html">Início</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a href="historico.html">Histórico</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Serviços</h3>
+                    <a href="servicos.html#agendamento">Marcar consulta</a>
+                    <a href="#localizacao">Localização</a>
+                    <a href="#contactos">Contactos</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contactos</h3>
+                    <a href="https://wa.me/244931254513" target="_blank" rel="noopener noreferrer">931 254 513</a>
+                    <span>edvandrofilipe</span>
+                    <span>Luanda, Angola</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© <span id="year">2026</span> Nova Otica. Todos os direitos reservados.</span>
+                <a href="#top">Voltar ao topo ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/historico.js"></script>
+</body>
+</html>
